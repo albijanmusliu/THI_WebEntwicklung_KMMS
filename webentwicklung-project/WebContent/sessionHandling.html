@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<meta charset="UTF-8">
-	<title>Setzen von Daten in eine Session</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular für Sitzungsdaten</title>
 </head>
-
 <body>
-	<h1>Setzen von Daten in eine Session</h1>
-	<form method="post" action="../SessionHandlingServlet">
-		<div>
-			<label for="vorname">Vorname:</label>
-			<input type="text" name="vorname" id="vorname" placeholder="Geben Sie hier Ihren Vornamen ein."
-				title="Vorname eingeben" required autofocus />
-		</div>
-		<div>
-			<label for="nachname">Nachname:</label>
-			<input type="text" name="nachname" id="nachname" placeholder="Geben Sie hier Ihren Nachnamen ein."
-				title="Nachname eingeben" required />
-		</div>
-		<div>
-			<button type="submit" name="action" value="writeToSession">Daten in Session setzen</button>
-		</div>
-	</form>
-</body>
+    <h1>Sitzungsdaten-Formular</h1>
+    <form action="SessionHandlingServlet" method="post">
+        <label for="vorname">Vorname:</label>
+        <input type="text" id="vorname" name="vorname" required autofocus>
+        <!-- Hinweistext für Vorname -->
+        <span class="tooltip">Geben Sie Ihren Vornamen ein</span>
 
+        <br>
+
+        <label for="nachname">Nachname:</label>
+        <input type="text" id="nachname" name="nachname" required>
+        <!-- Hinweistext für Nachname -->
+        <span class="tooltip">Geben Sie Ihren Nachnamen ein</span>
+
+        <br>
+
+        <!-- Schaltfläche zum Versenden der Daten -->
+        <button type="submit" name="action" value="writeToSession">Daten in Session speichern</button>
+    </form>
+</body>
 </html>

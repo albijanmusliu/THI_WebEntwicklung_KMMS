@@ -1,5 +1,13 @@
 # THI_WebEntwicklung_KMMS
 
+## Stiehl Anforderungen an unser Projekt
+- Spiele anlegen, ändern, löschen
+- Vereinbilder hochladen
+- Vereine erstellen über Admin  (als Favoriten)
+- Peronalisierte Filter (Nur Deutschland Spiele)
+- Spiele anlegen kann (User muss aufjedenfall irgendwas in der Seite eintragen können)
+- Registierungen (User-basiert)
+
 ### Frontend
 - HTML
 - CSS
